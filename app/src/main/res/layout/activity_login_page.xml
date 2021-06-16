@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login_page"
+    android:background="@drawable/bacground_login">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/logo_loginPage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_for_login"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_loginPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/biz_bilan_tez_va_osonroq_toping"
+                android:textColor="#2C3B97"
+                android:textSize="30sp"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tasdiqlash_uchun_raqam_kiriting"
+                android:textColor="#2C3B97"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:layout_marginTop="50dp"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="+998-"
+                    android:textColor="#E1B923"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:id="@+id/inputMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="@string/_123456789"
+                    android:textColorHint="#7A7A7C"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:textColor="#E1B923"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:maxLength="9"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:background="#2C3B97"
+                android:layout_marginTop="15dp"/>
+
+
+
+            <ImageButton
+                android:id="@+id/tasdiqlash_button"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_tasdiqlash_button" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
